@@ -1,0 +1,45 @@
+﻿
+> portfolio@0.1.0 lint
+> eslint
+
+
+C:\Users\Shresth\Desktop\Projects\portfolio\src\components\sections\about.tsx
+  5:10  warning  'Badge' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Shresth\Desktop\Projects\portfolio\src\components\sections\contact.tsx
+   50:73  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   65:57  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   67:18  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  125:48  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Shresth\Desktop\Projects\portfolio\src\components\sections\hero.tsx
+   6:18  warning  'Linkedin' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  13:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\Shresth\Desktop\Projects\portfolio\src\components\sections\hero.tsx:13:5
+  11 |
+  12 |   useEffect(() => {
+> 13 |     setMounted(true);
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  14 |   }, []);
+  15 |
+  16 |   if (!mounted) return null;  react-hooks/set-state-in-effect
+  50:16  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react/no-unescaped-entities
+
+C:\Users\Shresth\Desktop\Projects\portfolio\src\components\ui\input.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\Shresth\Desktop\Projects\portfolio\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\Shresth\Desktop\Projects\portfolio\tailwind.config.ts
+  91:13  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+Γ£û 11 problems (9 errors, 2 warnings)
+
