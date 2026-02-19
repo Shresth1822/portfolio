@@ -14,7 +14,12 @@ export function Footer() {
           >
             GitHub
           </a>
-          <a href="#" className="hover:text-foreground transition-colors">
+          <a
+            href="https://www.linkedin.com/in/shresth-varshney-b37441252"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
             LinkedIn
           </a>
           <a href="#" className="hover:text-foreground transition-colors">

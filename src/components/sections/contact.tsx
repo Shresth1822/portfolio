@@ -95,7 +95,10 @@ export default function Contact() {
                 </Link>
               </Button>
               <Button size="icon" variant="outline" asChild>
-                <Link href="#" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/shresth-varshney-b37441252"
+                  target="_blank"
+                >
                   {" "}
                   {/* Placeholder LinkedIN */}
                   <Linkedin className="h-5 w-5" />

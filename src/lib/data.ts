@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "Donor-Victim direct connection",
     ],
     links: {
-      github: "https://github.com/Shresth1822/RescueNet", // Assumed link
+      github: "https://github.com/Shresth1822", // Redirect to profile
     },
     category: "Blockchain",
   },
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       "Real-time updates",
     ],
     links: {
-      github: "https://github.com/Shresth1822/Splitify", // Assumed link
+      github: "https://github.com/Shresth1822", // Redirect to profile
     },
     category: "Full Stack",
   },
@@ -65,7 +65,7 @@ export const projects: Project[] = [
       "Search & filtering system",
     ],
     links: {
-      github: "https://github.com/Shresth1822/SweetsManagement", // Assumed link
+      github: "https://github.com/Shresth1822", // Redirect to profile
     },
     category: "Backend",
   },
@@ -82,7 +82,8 @@ export const projects: Project[] = [
       "Benchmarking probabilistic data structures",
     ],
     links: {
-      researchPaper: "#", // Placeholder
+      researchPaper: "https://github.com/Shresth1822", // Redirect to profile
+      github: "https://github.com/Shresth1822", // Redirect to profile
     },
     category: "Research",
   },

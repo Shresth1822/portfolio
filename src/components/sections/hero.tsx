@@ -106,6 +106,13 @@ export default function Hero() {
               <Github className="h-6 w-6" />
             </Link>
             <Link
+              href="https://www.linkedin.com/in/shresth-varshney-b37441252"
+              target="_blank"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="h-6 w-6" />
+            </Link>
+            <Link
               href="mailto:shresth.varshney22@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
