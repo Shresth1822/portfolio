@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
+import { GamificationWrapper } from "@/components/gamification-wrapper";
 import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
@@ -52,6 +53,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ScrollProgress />
+          <GamificationWrapper />
           <Navbar />
           <div className="flex-grow">{children}</div>
           <Footer />
