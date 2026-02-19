@@ -64,9 +64,9 @@ export default function Contact() {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold">Let&apos;s Connect</h3>
               <p className="text-muted-foreground text-lg">
-                I'm currently looking for new opportunities in Full Stack and
-                Blockchain development. Whether you have a question or just want
-                to say hi, my inbox is always open.
+                I&apos;m currently looking for new opportunities in Full Stack
+                and Blockchain development. Whether you have a question or just
+                want to say hi, my inbox is always open.
               </p>
             </div>
 
@@ -122,8 +122,8 @@ export default function Contact() {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as
-                  possible.
+                  Fill out the form below and I&apos;ll get back to you as soon
+                  as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
