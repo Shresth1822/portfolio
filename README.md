@@ -1,12 +1,12 @@
 # Shresth Varshney - Portfolio
 
-A premium, high-performance portfolio website built with Next.js 14, TypeScript, Tailwind CSS, and Shadcn UI.
+A premium, high-performance portfolio website built with Next.js 16, TypeScript, Tailwind CSS v4, and Shadcn UI.
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Components**: [Shadcn UI](https://ui.shadcn.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Icons**: [Lucide React](https://lucide.dev/)
@@ -38,11 +38,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   /hooks        # Custom Hooks
 ```
 
-## 🎨 Design System
+## 🎨 Design System & Features
 
 - **Dark Mode**: Enabled by default, togglable.
 - **Glassmorphism**: Custom utilities in `globals.css`.
 - **Gradients**: Blue to Violet premium gradient used for accents.
+- **Visual Enhancements**: Fluid animated wave patterns and floating geometric shapes mapped to the background geometry.
+- **Gamification**:
+  - **Custom Animated Cursor**: A reactive, modern cursor element with interaction states.
+  - **Achievement System**: Unlockable toast notifications as users explore the portfolio (e.g., "Project Hunter", "Skill Master").
+  - **Easter Egg**: Includes a hidden Konami Code listener.
 
 ## 🚢 Deployment
 
