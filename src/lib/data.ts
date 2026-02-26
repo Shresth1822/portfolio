@@ -9,6 +9,7 @@ export interface Project {
     github?: string;
     demo?: string;
     researchPaper?: string;
+    externalCaseStudy?: string;
   };
   image?: string; // Placeholder for now
   category: "Full Stack" | "Blockchain" | "Backend" | "Research";
@@ -47,7 +48,8 @@ export const projects: Project[] = [
       "Real-time updates",
     ],
     links: {
-      github: "https://github.com/Shresth1822", // Redirect to profile
+      github: "https://github.com/Shresth1822/split-expense#",
+      externalCaseStudy: "https://splitify.space",
     },
     category: "Full Stack",
   },

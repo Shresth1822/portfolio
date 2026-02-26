@@ -85,8 +85,23 @@ export default function Projects() {
                     asChild
                     className="group/btn"
                   >
-                    <Link href={`/projects/${project.slug}`}>
-                      Case Study
+                    <Link
+                      href={
+                        project.links.externalCaseStudy ||
+                        `/projects/${project.slug}`
+                      }
+                      target={
+                        project.links.externalCaseStudy ? "_blank" : undefined
+                      }
+                      rel={
+                        project.links.externalCaseStudy
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                    >
+                      {project.links.externalCaseStudy
+                        ? "Live Website"
+                        : "Case Study"}
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                     </Link>
                   </Button>
