@@ -12,21 +12,35 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "sonner";
+import { sendEmail } from "@/app/actions/send-email";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate Supabase submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      alert("Message sent! (Mock)");
-    }, 1500);
+
+    const formData = new FormData(e.currentTarget);
+    const result = await sendEmail(formData);
+
+    setIsSubmitting(false);
+
+    if (result.error) {
+      toast.error("Failed to send message", {
+        description: result.error,
+      });
+    } else {
+      toast.success("Message sent successfully!", {
+        description: "I'll get back to you as soon as possible.",
+      });
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+    }
   };
 
   return (
@@ -99,16 +113,7 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/shresth-varshney-b37441252"
                   target="_blank"
                 >
-                  {" "}
-                  {/* Placeholder LinkedIN */}
                   <Linkedin className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button size="icon" variant="outline" asChild>
-                <Link href="#" target="_blank">
-                  {" "}
-                  {/* Placeholder Twitter */}
-                  <Twitter className="h-5 w-5" />
                 </Link>
               </Button>
             </div>
@@ -134,12 +139,18 @@ export default function Contact() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>
-                      <Input id="name" placeholder="John Doe" required />
+                      <Input
+                        id="name"
+                        name="name"
+                        placeholder="John Doe"
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
                       <Input
                         id="email"
+                        name="email"
                         type="email"
                         placeholder="john@example.com"
                         required
@@ -150,6 +161,7 @@ export default function Contact() {
                     <Label htmlFor="subject">Subject</Label>
                     <Input
                       id="subject"
+                      name="subject"
                       placeholder="Project Inquiry"
                       required
                     />
@@ -158,6 +170,7 @@ export default function Contact() {
                     <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Tell me about your project..."
                       className="min-h-[120px]"
                       required

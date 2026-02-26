@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { GamificationWrapper } from "@/components/gamification-wrapper";
 import { BackgroundDecorations } from "@/components/ui/background-decorations";
+import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
@@ -60,6 +61,7 @@ export default function RootLayout({
           <div className="flex-grow">{children}</div>
           <Footer />
         </ThemeProvider>
+        <Toaster theme="dark" position="bottom-right" />
       </body>
     </html>
   );

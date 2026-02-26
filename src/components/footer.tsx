@@ -22,9 +22,6 @@ export function Footer() {
           >
             LinkedIn
           </a>
-          <a href="#" className="hover:text-foreground transition-colors">
-            Twitter
-          </a>
         </div>
       </div>
     </footer>
