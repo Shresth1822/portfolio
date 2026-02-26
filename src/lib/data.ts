@@ -17,24 +17,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "rescuenet",
-    title: "RescueNet",
-    shortDescription: "Decentralized Disaster Relief DApp built on ICP.",
-    fullDescription:
-      "RescueNet is a decentralized application designed to coordinate disaster relief efforts transparently. Built during HackTheBlock (1st Prize), it leverages the Internet Computer Protocol (ICP) to connect donors, volunteers, and victims without intermediaries. The system ensures smart contract-based accountability for all aid distributed.",
-    techStack: ["ICP", "Motoko", "React", "Tailwind CSS"],
-    features: [
-      "Transparent aid distribution",
-      "Smart contract-based accountability",
-      "Real-time volunteer tracking",
-      "Donor-Victim direct connection",
-    ],
-    links: {
-      github: "https://github.com/Shresth1822", // Redirect to profile
-    },
-    category: "Blockchain",
-  },
-  {
     slug: "splitify",
     title: "Splitify",
     shortDescription: "Group expense splitting app with Supabase RLS.",
@@ -54,7 +36,7 @@ export const projects: Project[] = [
     category: "Full Stack",
   },
   {
-    slug: "sweets-management",
+    slug: "sweets-management-system",
     title: "Sweets Management System",
     shortDescription: "Secure RESTful API for inventory management.",
     fullDescription:
@@ -72,21 +54,40 @@ export const projects: Project[] = [
     category: "Backend",
   },
   {
-    slug: "blockchain-supply-chain",
-    title: "Supply Chain Optimization",
-    shortDescription: "Research on using Blockchain for medical supplies.",
+    slug: "i-c-m-s",
+    title: "I.C.M.S",
+    shortDescription: "Inventory Control Management System.",
     fullDescription:
-      "Published research paper exploring the use of blockchain technology to enhance the transparency and efficiency of medical supply chains. The study benchmarks various probabilistic data structures to optimize data storage and retrieval in decentralized systems.",
-    techStack: ["Blockchain", "Research", "Supply Chain", "Data Structures"],
+      "A scalable system designed for managing stock levels, processing orders, and tracking inventory across multiple locations to improve operational efficiency and reduce discrepancies.",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
     features: [
-      "Abstract summary",
-      "Problem solved: Counterfeit drugs",
-      "Benchmarking probabilistic data structures",
+      "Real-time inventory tracking",
+      "Order processing modules",
+      "Data analytics dashboard",
+      "Role-based access control",
     ],
     links: {
-      researchPaper: "https://github.com/Shresth1822", // Redirect to profile
       github: "https://github.com/Shresth1822", // Redirect to profile
     },
-    category: "Research",
+    category: "Full Stack",
+  },
+  {
+    slug: "shop-management-system",
+    title: "Shop Management System",
+    shortDescription:
+      "Complete point-of-sale and shop administration platform.",
+    fullDescription:
+      "An integrated platform designed to handle daily retail store operations, including sales tracking, billing, employee management, and customer relations.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+    features: [
+      "Point of Sale (POS) interface",
+      "Employee shift tracking",
+      "Customer database management",
+      "Automated sales reporting",
+    ],
+    links: {
+      github: "https://github.com/Shresth1822", // Redirect to profile
+    },
+    category: "Full Stack",
   },
 ];
