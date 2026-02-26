@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "Search & filtering system",
     ],
     links: {
-      github: "https://github.com/Shresth1822", // Redirect to profile
+      github: "https://github.com/Shresth1822/sweets-management-system",
     },
     category: "Backend",
   },
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       "Role-based access control",
     ],
     links: {
-      github: "https://github.com/Shresth1822", // Redirect to profile
+      github: "https://github.com/Shresth1822/i-c-m-s",
     },
     category: "Full Stack",
   },
@@ -86,7 +86,7 @@ export const projects: Project[] = [
       "Automated sales reporting",
     ],
     links: {
-      github: "https://github.com/Shresth1822", // Redirect to profile
+      github: "https://github.com/Shresth1822/shop-management-system",
     },
     category: "Full Stack",
   },

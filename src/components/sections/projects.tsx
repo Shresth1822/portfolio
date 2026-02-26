@@ -79,32 +79,34 @@ export default function Projects() {
                   </div>
                 </CardContent>
                 <CardFooter className="flex gap-4 pt-0">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="group/btn"
-                  >
-                    <Link
-                      href={
-                        project.links.externalCaseStudy ||
-                        `/projects/${project.slug}`
-                      }
-                      target={
-                        project.links.externalCaseStudy ? "_blank" : undefined
-                      }
-                      rel={
-                        project.links.externalCaseStudy
-                          ? "noopener noreferrer"
-                          : undefined
-                      }
+                  {project.slug === "splitify" && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="group/btn"
                     >
-                      {project.links.externalCaseStudy
-                        ? "Live Website"
-                        : "Case Study"}
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                    </Link>
-                  </Button>
+                      <Link
+                        href={
+                          project.links.externalCaseStudy ||
+                          `/projects/${project.slug}`
+                        }
+                        target={
+                          project.links.externalCaseStudy ? "_blank" : undefined
+                        }
+                        rel={
+                          project.links.externalCaseStudy
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
+                      >
+                        {project.links.externalCaseStudy
+                          ? "Live Website"
+                          : "Case Study"}
+                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                      </Link>
+                    </Button>
+                  )}
                   {project.links.github && (
                     <Button variant="ghost" size="icon" asChild>
                       <Link href={project.links.github} target="_blank">
