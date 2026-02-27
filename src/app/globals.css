@@ -81,7 +81,7 @@
     @apply bg-card/50 backdrop-blur-md border border-border/50 shadow-sm transition-all hover:bg-card/80;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-zinc-200 via-zinc-500 to-zinc-800;
   }
 }
 

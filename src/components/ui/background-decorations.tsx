@@ -78,16 +78,6 @@ export function BackgroundDecorations() {
         />
       </div>
 
-      {/* Vertical Text Indicators */}
-      <div className="absolute left-8 bottom-32 hidden xl:flex flex-col gap-8 opacity-40">
-        <div className="h-20 w-[1px] bg-gradient-to-b from-transparent to-foreground/50 mx-auto" />
-        <span
-          className="text-xs tracking-[0.2em] transform rotate-180 uppercase"
-          style={{ writingMode: "vertical-lr" }}
-        >
-          Scroll
-        </span>
-      </div>
     </div>
   );
 }
