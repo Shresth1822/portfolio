@@ -20,7 +20,7 @@ const achievements = [
     date: "2024",
     description:
       "Enhancing Supply Chain Management of Medical Supplies Using Blockchain.",
-    icon: <FileText className="h-6 w-6 text-blue-400" />,
+    icon: <FileText className="h-6 w-6 text-zinc-400" />,
   },
   {
     type: "Research",
@@ -29,7 +29,7 @@ const achievements = [
     date: "2023",
     description:
       "Benchmarking Probabilistic Data Structures for efficient data retrieval.",
-    icon: <FileText className="h-6 w-6 text-blue-400" />,
+    icon: <FileText className="h-6 w-6 text-zinc-400" />,
   },
   {
     type: "Education",
@@ -37,7 +37,7 @@ const achievements = [
     organization: "Chandigarh University",
     date: "2021 - 2025",
     description: "Specialization in Blockchain Technology. CGPA: 8.10/10.",
-    icon: <GraduationCap className="h-6 w-6 text-violet-400" />,
+    icon: <GraduationCap className="h-6 w-6 text-zinc-400" />,
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Achievements() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Achievements & Certifications
           </h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto rounded-full mb-8" />
+          <div className="h-1 w-20 bg-gradient-to-r from-zinc-400 to-zinc-800 mx-auto rounded-full mb-8" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -83,11 +83,11 @@ export default function Achievements() {
                   className="relative"
                 >
                   <div className="absolute -left-[41px] top-1 h-6 w-6 rounded-full bg-background border border-border flex items-center justify-center">
-                    <div className="h-2 w-2 rounded-full bg-blue-500" />
+                    <div className="h-2 w-2 rounded-full bg-zinc-500" />
                   </div>
-                  <div className="bg-card/50 border border-border/50 rounded-lg p-4 hover:border-blue-500/30 transition-colors">
+                  <div className="bg-card/50 border border-border/50 rounded-lg p-4 hover:border-zinc-500/30 transition-colors">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-blue-400">
+                      <span className="text-sm font-medium text-zinc-400">
                         {item.type}
                       </span>
                       <span className="text-sm text-muted-foreground">
@@ -120,7 +120,7 @@ export default function Achievements() {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="flex items-center p-4 bg-card/30 border border-border/50 rounded-lg hover:bg-card/50 transition-colors"
                 >
-                  <Award className="h-5 w-5 text-violet-400 mr-3 shrink-0" />
+                  <Award className="h-5 w-5 text-zinc-400 mr-3 shrink-0" />
                   <span className="font-medium">{cert}</span>
                 </motion.div>
               ))}

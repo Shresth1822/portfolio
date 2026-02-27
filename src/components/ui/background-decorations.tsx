@@ -47,10 +47,10 @@ export function BackgroundDecorations() {
               x2="0%"
               y2="100%"
             >
-              <stop offset="0%" stopColor="rgba(59, 130, 246, 0.5)" />{" "}
-              {/* Blue */}
-              <stop offset="100%" stopColor="rgba(139, 92, 246, 0.5)" />{" "}
-              {/* Violet */}
+              <stop offset="0%" stopColor="rgba(113, 113, 122, 0.4)" />{" "}
+              {/* Zinc 500 */}
+              <stop offset="100%" stopColor="rgba(24, 24, 27, 0.6)" />{" "}
+              {/* Zinc 900 */}
             </linearGradient>
           </defs>
         </svg>
@@ -61,12 +61,12 @@ export function BackgroundDecorations() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-          className="w-full h-full border border-dashed border-blue-500 rounded-full"
+          className="w-full h-full border border-dashed border-zinc-500 rounded-full"
         />
         <motion.div
           animate={{ rotate: -360 }}
           transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-          className="absolute inset-[50px] border border-dotted border-violet-500 rounded-full"
+          className="absolute inset-[50px] border border-dotted border-zinc-500 rounded-full"
         />
       </div>
 
@@ -74,7 +74,7 @@ export function BackgroundDecorations() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-          className="w-full h-full border-2 border-dashed border-blue-400 rounded-full"
+          className="w-full h-full border-2 border-dashed border-zinc-400 rounded-full"
         />
       </div>
 

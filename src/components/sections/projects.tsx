@@ -29,7 +29,7 @@ export default function Projects() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Featured Projects
           </h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto rounded-full mb-4" />
+          <div className="h-1 w-20 bg-gradient-to-r from-zinc-400 to-zinc-800 mx-auto rounded-full mb-4" />
           <p className="text-muted-foreground max-w-[600px] mx-auto">
             A selection of my work in Blockchain, Full Stack Development, and
             Research.
@@ -45,7 +45,7 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full flex flex-col overflow-hidden border-border/50 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 group">
+              <Card className="h-full flex flex-col overflow-hidden border-border/50 hover:border-zinc-500/50 transition-all hover:shadow-lg hover:shadow-zinc-500/10 group">
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
                     <Badge
@@ -59,7 +59,7 @@ export default function Projects() {
                       {project.category}
                     </Badge>
                   </div>
-                  <CardTitle className="text-2xl group-hover:text-blue-400 transition-colors">
+                  <CardTitle className="text-2xl group-hover:text-zinc-400 transition-colors">
                     {project.title}
                   </CardTitle>
                   <CardDescription className="text-base mt-2">

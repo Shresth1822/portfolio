@@ -40,7 +40,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-500">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500">
               {project.title}
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
@@ -57,7 +57,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none pl-0">
                 {project.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-blue-500 shrink-0" />
+                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-zinc-500 shrink-0" />
                     <span>{feature}</span>
                   </li>
                 ))}

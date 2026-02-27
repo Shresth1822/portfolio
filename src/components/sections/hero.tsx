@@ -20,9 +20,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
       {/* Background Gradient Mesh */}
       <div className="absolute inset-0 -z-10 bg-background">
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse-slow" />
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-zinc-500/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse-slow" />
         <div
-          className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-violet-500/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse-slow"
+          className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-zinc-500/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse-slow"
           style={{ animationDelay: "2s" }}
         />
       </div>
@@ -35,8 +35,8 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-6"
         >
-          <div className="inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-sm text-blue-300 backdrop-blur-sm">
-            <span className="flex h-2 w-2 rounded-full bg-blue-400 mr-2 animate-pulse"></span>
+          <div className="inline-flex items-center rounded-full border border-zinc-500/30 bg-zinc-500/10 px-3 py-1 text-sm text-zinc-300 backdrop-blur-sm">
+            <span className="flex h-2 w-2 rounded-full bg-zinc-400 mr-2 animate-pulse"></span>
             Available for new opportunities
           </div>
         </motion.div>
@@ -84,7 +84,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/10"
+            className="border-zinc-500/20 hover:border-zinc-500/50 hover:bg-zinc-500/10"
             asChild
           >
             <Link
@@ -132,11 +132,11 @@ export default function Hero() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
       >
         <span className="text-xs text-muted-foreground">Scroll</span>
-        <div className="w-1 h-12 rounded-full bg-gradient-to-b from-transparent via-blue-500 to-transparent opacity-50 relative overflow-hidden">
+        <div className="w-1 h-12 rounded-full bg-gradient-to-b from-transparent via-zinc-500 to-transparent opacity-50 relative overflow-hidden">
           <motion.div
             animate={{ y: [0, 50, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-            className="w-full h-1/2 bg-blue-400 absolute top-0 left-0 blur-[1px]"
+            className="w-full h-1/2 bg-zinc-400 absolute top-0 left-0 blur-[1px]"
           />
         </div>
       </motion.div>

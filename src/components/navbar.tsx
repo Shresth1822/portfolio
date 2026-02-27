@@ -39,7 +39,7 @@ export function Navbar() {
       <div className="container px-4 md:px-6 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-500"
+          className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500"
         >
           Shresth.dev
         </Link>

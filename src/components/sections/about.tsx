@@ -7,25 +7,25 @@ import { Award, BookOpen, Code, GraduationCap } from "lucide-react";
 
 const stats = [
   {
-    icon: <Award className="h-6 w-6 text-blue-400" />,
+    icon: <Award className="h-6 w-6 text-zinc-400" />,
     value: "1st",
     label: "Place in HackTheBlock",
     description: "ICP India + Blockseblock",
   },
   {
-    icon: <BookOpen className="h-6 w-6 text-violet-400" />,
+    icon: <BookOpen className="h-6 w-6 text-zinc-400" />,
     value: "2",
     label: "Research Papers",
     description: "Published in International Journals",
   },
   {
-    icon: <Code className="h-6 w-6 text-blue-400" />,
+    icon: <Code className="h-6 w-6 text-zinc-400" />,
     value: "5+",
     label: "Full Stack Projects",
     description: "Deployed & Open Source",
   },
   {
-    icon: <GraduationCap className="h-6 w-6 text-violet-400" />,
+    icon: <GraduationCap className="h-6 w-6 text-zinc-400" />,
     value: "8.10",
     label: "CGPA",
     description: "B.E. Computer Science",
@@ -44,7 +44,7 @@ export default function About() {
           className="mb-12 text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto rounded-full" />
+          <div className="h-1 w-20 bg-gradient-to-r from-zinc-400 to-zinc-800 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -108,7 +108,7 @@ export default function About() {
                   <div className="mb-4 p-3 bg-secondary/50 rounded-full">
                     {stat.icon}
                   </div>
-                  <div className="text-3xl font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-br from-blue-400 to-violet-500">
+                  <div className="text-3xl font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-br from-white to-zinc-500">
                     {stat.value}
                   </div>
                   <div className="font-medium mb-1">{stat.label}</div>

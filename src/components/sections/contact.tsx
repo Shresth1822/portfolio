@@ -47,7 +47,7 @@ export default function Contact() {
     <section id="contact" className="py-20 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10 bg-background">
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-zinc-500/10 rounded-full blur-[100px]" />
       </div>
 
       <div className="container px-4 md:px-6 relative z-10">
@@ -59,7 +59,7 @@ export default function Contact() {
           className="mb-12 text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto rounded-full mb-4" />
+          <div className="h-1 w-20 bg-gradient-to-r from-zinc-400 to-zinc-800 mx-auto rounded-full mb-4" />
           <p className="text-muted-foreground max-w-[600px] mx-auto">
             Have a project in mind or want to discuss blockchain tech? I&apos;d
             love to hear from you.
@@ -87,7 +87,7 @@ export default function Contact() {
             <div className="space-y-4">
               <a
                 href="mailto:shresth.varshney22@gmail.com"
-                className="flex items-center space-x-3 text-lg hover:text-blue-400 transition-colors"
+                className="flex items-center space-x-3 text-lg hover:text-zinc-400 transition-colors"
               >
                 <div className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center">
                   <Mail className="h-5 w-5" />
@@ -178,7 +178,7 @@ export default function Contact() {
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white"
+                    className="w-full bg-gradient-to-r from-zinc-700 to-zinc-950 hover:from-zinc-800 hover:to-black text-white"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
